@@ -50,7 +50,7 @@ fun main() {
     println("сериализация + $turns")
     val fileName = "./posts.json"
 
-    var file = Vfs.File(fileName)
+    var file = File(fileName)
     file.writeText(turns)
 
 }
