@@ -4,7 +4,7 @@ import com.google.gson.Gson
 import java.io.File
 
 fun main() {
-        val list = listOf(
+    val list = listOf(
         Post(PostType.SIMPLE, 1, "2020-12-09 19:20:03", "Petrov", "Post1", null, null, null, null, null),
         Post(PostType.SIMPLE, 2, "2020-09-09 10:20:03", "Ivanov", "Post2", null, null, null, null, null),
         Post(
@@ -39,7 +39,7 @@ fun main() {
     val turns = Gson().toJson(list)
 
     println("сериализация + $turns")
-    val fileName = "./posts.json"
+    val fileName = "./posts_simple.json"
 
     var file = File(fileName)
     file.writeText(turns)
