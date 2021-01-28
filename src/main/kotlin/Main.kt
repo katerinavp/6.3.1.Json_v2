@@ -32,18 +32,9 @@ fun main() {
             "https://www.youtube.com/watch?v=WhWc3b3KhnY",
             null
         ),
-        Post(
-            PostType.ADV,
-            6,
-            "2020-12-09 19:20:03",
-            "Petrov",
-            "Post6",
-            null,
-            null,
-            null,
-            null,
-            "https://netology.ru/"
-        ),
+                Post(PostType.SIMPLE, 5, "2021-01-01 19:20:03", "Popov", "Post5", null, null, null, null, null),
+                Post(PostType.SIMPLE, 6, "2021-01-05 19:20:03", "Popov", "Post5", null, null, null, null, null),
+
     )
     val turns = Gson().toJson(list)
 
